@@ -48,7 +48,7 @@ main proc
     
                 ;calculation 
     mov bl,a
-    sub bl,al
+    add bl,al
     add bl,30h
     mov b,bl 
     
