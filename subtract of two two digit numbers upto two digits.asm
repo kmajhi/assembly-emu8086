@@ -3,9 +3,8 @@
 .DATA 
     num1 DB 0AH, 0DH, "Enter the first number: $" 
     num2 DB 0AH, 0DH, "Enter the second number: $" 
-    sums DB 0AH, 0DH, "The result is: $"
-     
-    
+    subs DB 0AH, 0DH, "The result is: $"
+
 .CODE 
     MAIN: 
         MOV AX, @DATA 
@@ -63,7 +62,7 @@
         MOV BX, AX 
         
         
-        MOV DX, OFFSET sums 
+        MOV DX, OFFSET subs 
         MOV AH, 09H 
         INT 21H 
          
@@ -81,9 +80,6 @@
         ADD DL, 30H 
         MOV AH, 02H 
         INT 21H       
-       
-        
-        
         
     EXIT: 
         MOV AH, 04CH 
