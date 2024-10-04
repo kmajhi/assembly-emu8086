@@ -1,7 +1,7 @@
+;This program takes an input character in uppercase and converts it to lowercase.
 .model small
 .stack 100h
 .data
-
     char db 0
  .code
  
